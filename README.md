@@ -49,4 +49,4 @@ A* evaluates cells using:
 Each move has a cost of 1, and movement is allowed in four directions.
 
 ## Author
-Created as a learning project to understand pathfinding and A* Search.
+Created by Faizan Ali as part of my learning journey with Syntecxhub.
