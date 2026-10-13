@@ -1,18 +1,20 @@
 # Maze Solver using A* Search Algorithm
 
 ## About the Project
-This project implements the A* Search algorithm to find the shortest path from a Start cell to a Goal cell in a grid-based maze.
+This project uses the A* Search algorithm to find the shortest path from a Start cell to a Goal cell in a 12 × 12 grid-based maze.
 
-The application is built using Python and Tkinter to provide a graphical visualization of the search process.
+The application is built with Python and Tkinter to visualize how the search algorithm explores the maze and finds a route to the goal.
 
 ## Features
 - A* Search algorithm for pathfinding
 - Manhattan distance heuristic
 - Priority queue using Python's `heapq`
 - Animated search visualization
-- Final shortest path highlighting
+- Color-coded frontier, explored cells, walls, start, goal, and final path
+- Live statistics showing path moves and explored cells
 - Reset functionality
 - Handles cases where no valid path exists
+- GUI with a maze legend and algorithm instructions
 
 ## Technologies Used
 - Python
@@ -27,15 +29,13 @@ The application is built using Python and Tkinter to provide a graphical visuali
 
    `python maze_solver.py`
 
-Tkinter is included with many standard Python installations. If it is unavailable, check your Python installation.
-
 ## Maze Legend
 - Green: Start
 - Red: Goal
 - Gray: Wall
-- Purple: Frontier
+- Purple: Frontier cells waiting to be explored
 - Blue: Explored cells
-- Yellow: Final path
+- Yellow: Shortest path
 
 ## Algorithm
 A* evaluates cells using:
@@ -44,9 +44,9 @@ A* evaluates cells using:
 
 - `g(n)`: Actual cost from the Start.
 - `h(n)`: Estimated distance to the Goal using Manhattan distance.
-- `f(n)`: Estimated total path cost.
+- `f(n)`: Estimated total cost.
 
-Each move has a cost of 1, and movement is allowed in four directions.
+Each move costs 1, and movement is allowed in four directions: up, down, left, and right.
 
 ## Author
-Created by Faizan Ali as part of my learning journey with Syntecxhub.
+Created as a learning project during my learning journey with Syntecxhub.
